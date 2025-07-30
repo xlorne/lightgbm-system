@@ -16,9 +16,14 @@
 
 ## 依赖环境
 - C++17 或更高版本编译器
+- libomp
 - [CMake](https://cmake.org/) 3.15+
 - [Conan](https://conan.io/) 2.x
-- libomp  
+
+## Libomp 安装
+`brew install libomp` （macOS 用户）
+`apt install libomp-dev` （Ubuntu 用户）
+
 
 ## 获取 LightGBM 源码
 
