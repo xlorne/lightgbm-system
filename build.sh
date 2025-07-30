@@ -1,5 +1,13 @@
 #!/bin/bash
 set -e
+
+# 检查 LightGBM 源码是否存在，不存在则自动下载
+if [ ! -d "third_party/LightGBM/.git" ]; then
+  echo "==> 未检测到 third_party/LightGBM，自动下载 LightGBM 及其所有扩展..."
+  bash third_party/lightgbm.sh
+  mv ./LightGBM ./third_party/LightGBM
+fi
+
 echo "==> 清理旧构建..."
 rm -rf build
 echo "==> 创建构建目录..."
