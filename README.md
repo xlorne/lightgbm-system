@@ -18,6 +18,7 @@
 - C++17 或更高版本编译器
 - [CMake](https://cmake.org/) 3.15+
 - [Conan](https://conan.io/) 2.x
+- libomp  
 
 ## 获取 LightGBM 源码
 
